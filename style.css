@@ -2,24 +2,120 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  .navbar{
-    background-color: beige;
+  /* Fullscreen Carousel */
+#carouselBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1; /* Push it behind the navbar */
+}
+
+#carouselBackground .carousel-item img {
+  object-fit: cover;
+  height: 100vh; /* Full screen height */
+}
+.carousel-item img {
+  height: 100vh; /* Ensure full-screen height for carousel images */
+  object-fit: cover; /* Crop and fit images to the navbar */
+}
+
+
+
+
+ /* General Navbar Styling */
+.navbar {
+  /* background-color: #f8f9fa; Light grey background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Keep it above the carousel */
+  background-color: rgba(255, 255, 255, 0.8);  /*Light transparent background */
+  transition: background-color 0.3s ease;
+
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+  max-height: 40px; /* Adjust logo size */
+  margin-right: 10px; /* Spacing between logo and text */
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #333; /* Darker text for better contrast */
+  font-weight: 500; /* Slightly bold */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Highlighted blue on hover */
+}
+.nav-link, .fa {
+  color: #333;
+}
+
+.nav-link:hover, .fa:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  border-radius: 6px; /* Rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Search Bar */
+.form-control {
+  border-radius: 20px; /* Rounded input */
+  border: 1px solid #ddd; /* Subtle border */
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+
+/* Icons Styling */
+.fa-magnifying-glass,
+.fa-cart-shopping,
+.fa-user {
+  font-size: 18px; /* Adjust size */
+  color: #333; /* Match navbar link color */
+  transition: color 0.3s ease-in-out;
+}
+
+.fa-magnifying-glass:hover,
+.fa-cart-shopping:hover,
+.fa-user:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+/* Spacing for Icons */
+.cart,
+.user {
+  margin-left: 15px; /* Space between search bar and icons */
+}
+
+/* Navbar Toggler (for mobile view) */
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  /* background-color: #333; Darker toggle icon */
+  border-radius: 2px;
+}
+
+/* Adjust Navbar Collapse for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+      text-align: center; /* Center align links */
   }
-.navbar-brand img{
-  width: 100px;
-  height: 100px;
-}
-.form{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.cart-user{
-  display:flex;
-    /* to align block items in a line */
-    align-items: center; 
-    /* to vertically center y axis*/
-    justify-content: center; 
-     /* to horizontally center x axis */
-    margin-top: 1rem;
+  .form-control {
+      margin-bottom: 10px; /* Add spacing for smaller screens */
+  }
 }

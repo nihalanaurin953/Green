@@ -25,68 +25,94 @@
 </head>
 
 <body>
-    <header>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./greenlogo2.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                </a>
-                <!-- <a class="navbar-brand" href="#">GREEN</a> -->
 
 
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                What all we got?
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">T-Shirts</a></li>
-                                <li><a class="dropdown-item" href="#">Hoodies</a></li>
-                                <li><a class="dropdown-item" href="#">Shorts</a></li>
-                                <li><a class="dropdown-item" href="#">Tracks</a></li>
-                                <li><a class="dropdown-item" href="#">Fivesleeve</a></li>
-                                <li><a class="dropdown-item" href="#">Co-Ords</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">View All</a></li>
-                            </ul>
-                        </li>
-                        <!-- <li class="nav-item">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="./greenlogo2.jpg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <!-- <a class="navbar-brand" href="#">GREEN</a> -->
+
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    What all we got?
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                                    <li><a class="dropdown-item" href="#">Shorts</a></li>
+                                    <li><a class="dropdown-item" href="#">Tracks</a></li>
+                                    <li><a class="dropdown-item" href="#">Fivesleeve</a></li>
+                                    <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">View All</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li> -->
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="What you need?" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <div class="cart-user d-flex">
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="What you need?"
+                                aria-label="Search" id="searching">
+                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            <a href="#"><i class="fa-solid fa-magnifying-glass" id="searching"></i></a>
+                        </form>
+                        <!-- <div class="cart-user d-flex"> -->
 
                         <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         <a class="user" href="#"><i class="fa-solid fa-user"></i></a>
 
+                        </div>
                     </div>
+                    
+
                 </div>
+               
 
             </div>
-        </nav>
-    </header>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./media/cartshirt3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./media/f4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./media/fivesleeves.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
