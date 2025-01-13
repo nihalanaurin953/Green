@@ -2,7 +2,24 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
+  .navbar{
+    background-color: beige;
+  }
 .navbar-brand img{
   width: 100px;
   height: 100px;
+}
+.form{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cart-user{
+  display:flex;
+    /* to align block items in a line */
+    align-items: center; 
+    /* to vertically center y axis*/
+    justify-content: center; 
+     /* to horizontally center x axis */
+    margin-top: 1rem;
 }
