@@ -2,3 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
+.navbar-brand img{
+  width: 100px;
+  height: 100px;
+}
