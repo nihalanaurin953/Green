@@ -1,24 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  /* Fullscreen Carousel */
-#carouselBackground {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1; /* Push it behind the navbar */
-}
-
-#carouselBackground .carousel-item img {
-  object-fit: cover;
-  height: 100vh; /* Full screen height */
-}
-.carousel-item img {
-  height: 100vh; /* Ensure full-screen height for carousel images */
-  object-fit: cover; /* Crop and fit images to the navbar */
 }
 
 
@@ -40,7 +22,7 @@ body {
 
 /* Navbar Brand Logo */
 .navbar-brand img {
-  max-height: 40px; /* Adjust logo size */
+  max-height: 50px; /* Adjust logo size */
   margin-right: 10px; /* Spacing between logo and text */
 }
 
@@ -119,3 +101,21 @@ body {
       margin-bottom: 10px; /* Add spacing for smaller screens */
   }
 }
+  /* Fullscreen Carousel */
+  #carouselBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Push it behind the navbar */
+  }
+  
+  #carouselBackground .carousel-item img {
+    object-fit: cover;
+    height: 100vh; /* Full screen height */
+  }
+  .carousel-item img {
+    height: 100vh; /* Ensure full-screen height for carousel images */
+    object-fit: cover; /* Crop and fit images to the navbar */
+  }
